@@ -116,7 +116,7 @@ class Shorten extends React.Component {
 
     if (this.props.ready && this.props.valid) {
       let hash = this.shortenURL();
-      let url = `https://m-gdev.github.io/shortURL/#${hash}`
+      let url = `https://m-gdev.github.io/shortURL#${hash}`
       message = <p className="shortened">URL Shortened! - <a href={url}>{url}</a></p>
     }
     else if (!this.props.valid && this.props.ready) {
