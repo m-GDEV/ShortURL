@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Rock+Salt&display=swap');
+
+:root {
+  background-color: #2B2B40;
+  color: whitesmoke;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.header h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 4rem;
+}
+
+.desc {
+  position: relative;
+  top: -2.5rem;
+}
+
+.invalid {
+  color: red;
+}
+
+.input {
+  padding-left: 0.7rem;
+  margin-right: 1.5rem;
+  border-radius: 0.7rem;
+  height: 3.5rem;
+  width: 30rem;
+  border: blueviolet 0.2rem solid;
+  outline: none;
+}
+
+.submit {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #3456bc;
+  color: white;
+  height: 3rem;
+  width: 4.5rem;
+}
+
+.submit:hover {
+  background-color: #2945e5;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+}
