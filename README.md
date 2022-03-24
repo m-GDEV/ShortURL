@@ -1,5 +1,7 @@
 # ShortURL
 
+![demo screenshot](https://i.imgur.com/2xBifzH.png)
+
 An open source and privacy friendly URL shortener.
 
 Built with React and uses jsonstorage.net
