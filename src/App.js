@@ -104,7 +104,7 @@ class Shorten extends React.Component {
         // updating existing json with new url hash info
         json[`${random_string}`] = url;
         console.log(json);
-        fetch("https://api.jsonstorage.net/v1/json/cc93bc6b-9f01-49e6-b6a5-c50b46c97b69", {headers: headers, method: 'PUT', body: JSON.stringify(json)})
+        fetch("https://api.jsonstorage.net/v1/json/17f8db36-6bda-4897-a606-945e4fb6c7f4/ee303bbd-57d5-4ce6-8527-974aa09544a1?apiKey=af421b3d-0e16-4773-a5e8-e8c26da49037", {headers: headers, method: 'PUT', body: JSON.stringify(json)})
       });
 
       return random_string;
