@@ -116,7 +116,7 @@ class Shorten extends React.Component {
 
     if (this.props.ready && this.props.valid) {
       let hash = this.shortenURL();
-      let url = `https://m-gdev.github.io/ShortURL#${hash}`
+      let url = `/ShortURL#${hash}`
       message = <p className="shortened">URL Shortened! - <a href={url}>{url}</a></p>
     }
     else if (!this.props.valid && this.props.ready) {
@@ -139,6 +139,7 @@ class App extends React.Component {
       fetch("https://api.jsonstorage.net/v1/json/cc93bc6b-9f01-49e6-b6a5-c50b46c97b69")
         .then((response) => response.json())
         .then((json) => {
+          console.log(json)
           window.location.href = json[window.location.hash.substring(1)]
       });
     }
